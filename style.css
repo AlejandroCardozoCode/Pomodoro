@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #e1dbdb; /* Azul primario */
+  --color-secondary: #262a2e; /* Gris secundario */
+  --color-accent: #c34e3f; /* Amarillo de acento */
+  --color-background: #f9f6f6; /* Fondo */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; height: auto; }
+    100% { opacity: 0; height: 0; }
+}
+
+body{
+    background-color: var(--color-primary) ;
+    color: var(--color-secondary);
+    padding-bottom: 20rem;
+}
+
+#btn-start:hover,
+.arrow:hover{
+    transition: all 0.5s ease; 
+    color: var(--color-accent);
+}
+
+
+.pomodoro-container{
+    background-color: var(--color-background);
+    max-width: 30rem;
+}
+
+.animated{
+    transition: opacity 0.5s ease-in-out;
+}
+
+.clock{
+    height: 100rem;
+}
+
+.arrow{
+    font-size: 2.4rem;
+}
+
+.hide{
+    display: none;
+}
+
+.not-selectable{
+    user-select: none;
+}
+
+.footer {
+    position: fixed; /* Establecer la posición del pie de página como absoluta */
+    bottom: 0; /* Anclar al fondo de la página */
+    width: 100%; /* Ancho completo */
+    padding: 0.8rem;
+    background-color: var(--color-background);
+}
+
+.progress-bar{
+    background-color: #c34e3f;
+    margin: 0;
+}
+
+.quote-container{
+    background-color: var(--color-background);
+    max-width: 30rem;
+}
+
+.explain{
+    height: 20rem;
+}
